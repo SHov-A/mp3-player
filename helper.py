@@ -2,7 +2,14 @@ import os
 from playsound import playsound
 import json
 
+
 class Helper:
+    """
+    This class provides to run mp3 files and labels it is noise or clear.
+    For creating a new object it takes three parameters - mp3 files directory,
+    empty dictionary and name of json file which will be created in future
+    """
+
     def __init__(self, mp3_directory, dictionary_for_json, json_for_audio_file):
         self.__mp3_directory = mp3_directory
         self.__dictionary_for_json = dictionary_for_json
